@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Avistamiento de aves</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="text.js"></script>
+        <link rel="stylesheet" href="./style/style.css">
+		<link rel="stylesheet" href="./style/reset.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">		
+		<link rel ="icon" type = "ico" href="./img/icons/favicon32.png">
+	</head>
+	<header id="masthead" class="site-header nav-down" role="banner">
+
+		
+		<div id="labofo_sso_wrap" class="container">
+			<div id="labofo_sso_container">
+				<img style= width:34 height="28" src="./img/assest/ColombiaWbg.png" alt="Logo"/>
+					<img style= width:24 height="33" src="./img/assest/Disfruta-de-las-Aves.png" alt="Logo"/>
+		
+
+				<ul id="labofo_sso_ul">
+					<li style="font-family: poppins; color: #fff;"id="labofo_sso_network" role="menuitem" tabindex=0 class="dropdown-toggle" aria-haspopup="true">Red Estudio de Aves <span class="caret"></span>
+						<ul aria-hidden="true">
+							<li><a style="font-family: poppins; color: #fff;" href="//www.allaboutbirds.org">Todo sobre las aves</a></li>
+							
+							<li><a style="font-family: poppins; color: #fff;"href="//www.ebird.org">eBird</a></li>
+							
+							
+						</ul>
+					</li>
+		
+										
+					
+						<li style="font-family: poppins; color: #fff;"id="labofo_sso_login"><a href="./login.html"><span>iniciar sesión</span></a></li>
+						
+							</ul>
+							
+			</div><!-- end sso container -->
+
+
+		</div><!-- end sso wrap -->
+
+
+		
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+		
+						<div class="site-branding navbar-header">
+							
+		
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar" aria-expanded="false">
+									
+						
+							</button>
+							
+							
+							<div id="languages" class="es" tabindex=0>   
+								  
+								<img style= width:24 height="33" src="./img/icons/language.svg" alt="Logo"/>
+								<i class="fa fa-globe fa-lg"></i> <div class="wpml-ls-statics-shortcode_actions wpml-ls" id="lang_sel">
+								
+			<ul>
+								<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-es wpml-ls-current-language wpml-ls-last-item">
+						<a href="#" class="lang_sel_sel icl-es"style="font-family: poppins; color: #fff;"
+							lang-select="es">Español</a><br><br>
+		
+						<ul>
+							<li style="font-family: poppins; color: #fff;" class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-first-item icl-en">
+								<a href="#" 
+									lang-select="en">English</a>
+							</li>
+						</ul>
+					</li>
+							
+			</ul>
+			
+		</div>
+		
+					<span class="caret"></span>
+										</div> <!-- #languages -->
+		
+										
+		
+						</div><!--   					 .site-branding .navbar-header-->
+		
+		
+		
+						<div class="navbar-collapse collapse in" id="mainNavbar" aria-expanded="true" alt="Logo">
+		
+							<ul class="nav navbar-nav navbar-right">
+								
+								<li style="font-family: poppins; color: #fff;"class="dropdown"><a href="./index.html" class="dropdown-toggle community" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio<span class="caret"></span></a>
+								
+								</li>
+
+								<li style="font-family: poppins; color: #fff;"class="dropdown"><a href="#" class="dropdown-toggle resources" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acerca <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li style="font-family: poppins; color: #fff;"><a href="./about.html">Quiénes somos</a></li>
+										
+										<li><a href="./contacto.html"target="_blank" >Contáctanos aquí</a></li>
+									</ul>
+								</li>
+
+
+
+								<li style="font-family: poppins; color: #fff;"class="dropdown"><a href="#" class="dropdown-toggle learn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aprende <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										
+										<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Especies Regionales <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="./mapa_interactivo.html">Cundinamarca</a></li>
+											
+											</ul>
+										</li>
+										
+										
+									</ul>
+								</li>
+							
+						<li style="font-family: poppins; color: #fff;"class="dropdown"><a href="#" class="dropdown-toggle data-study" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mapas <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+									 									
+						
+										<li><a href="./mapa_colombia_interactivo.html">Mapa interactivo</a></li>
+									
+									</ul>
+								</li>
+								<li style="font-family: poppins; color: #fff;"class="dropdown"><a href="#" class="dropdown-toggle search" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buscar <span class="caret"></span></a>
+									<ul class="dropdown-menu" style="right: 0; left: auto;">
+										<li>
+											<form role="search" method="get" class="search-form" action="#">
+						<label>
+							<span class="screen-reader-text">Search for:</span>
+							<input style="font-family: poppins; color: #fff;"type="search" class="search-field" placeholder="digita tu búsqueda aquí &hellip;" value="" name="s" />
+						</label>
+						<input style="font-family: poppins; color: #fff;" type="submit" class="search-submit" value="Buscar" />
+					</form>								</li>
+									</ul>
+								</li>
+					  </ul>
+		
+						</div> <!-- #mainNavbar -->
+		
+					</div> <!-- .container -->
+				</nav>
+				
+			</header><!-- #masthead -->
+
+<body>
+	<section class="heroImg">
+		<article>
+			<div>
+				
+				<img src="./img/assest/pp.png" alt="Pájaro azul">
+			</div>
+		</article>			 
+			 
+				
+		</section>
+	
+ <!-- ... articulo información ...
+ -->
+ <section class="section1">
+	
+	 
+		  <div style="padding: 3%;">
+	
+			 
+			  <h2 class="font40"style="margin-top: 40px;">Conozca más acerca del avistamiento</h2>
+			  <br><br><br> 
+			  <p class="section-description">
+				Los departamentos de <b style="color:#0693e3; font-weight: bolder;"0693e3> Cundinamarca </b> y <b style="color:#0693e3; font-weight: bolder;"> Boyacá </b> apoyan la actividad de promoción y divulgación de la <b style="color:#0693e3; font-weight: bolder;"> biodiversidad </b>
+				, y cuentan con una gran biodiversidad en <b style="color:#0693e3; font-weight: bolder;"> Aves </b>. Es así que debido al cuidado del medio ambiente y la gestión turística sostenible de la región, lograresmos permiten mejorar su competitividad e incentivar la generación de bienestar para sus habitantes y visitantes.
+			  </p>
+			</div>
+			
+		
+	
+
+ <div class="content-grid-item col-md-4 flex-column py-5">
+	<div class="icon-box icon-box-style-1">
+	  <div class="icon-box-icon">
+		<a href="#" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+		  <img src="./img/icons/hashtag.png" alt="página Aviturismo en Colombia">
+		</a>
+	  </div>
+	  <div class="icon-box-info">
+		<div class="icon-box-info-title text-left">
+		  <a href="./recursos.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+			<span class="icon-box-sub-title">Número de </span>
+			<h4>Aves Colombianas</h4>
+		  </a>
+		</div>      
+	  </div>
+	</div>
+  </div>
+  <div class="content-grid-item col-md-4 flex-column py-5">
+	<div class="icon-box icon-box-style-1">
+	  <div class="icon-box-icon">
+		<a href="#" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+		  <img src="./img/icons/estrella.png" alt="página Aviturismo en Colombia">
+		</a>
+	  </div>
+	  <div class="icon-box-info">
+		<div class="icon-box-info-title text-left">
+		  <a href="./aprende.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+			<span class="icon-box-sub-title">Top´s </span>
+			<h4>Aves Regionales</h4>
+		  </a>
+		</div>      
+	  </div>
+	</div>
+  </div>
+  <div class="content-grid-item col-md-4 flex-column py-5">
+	<div class="icon-box icon-box-style-1">
+	  <div class="icon-box-icon">
+		<a href="#" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+		  <img src="./img/icons/mundo.png" alt="página Aviturismo en Colombia">
+		</a>
+	  </div>
+	  <div class="icon-box-info">
+		<div class="icon-box-info-title text-left">
+		  <a href="./aprende.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+			<span class="icon-box-sub-title">Aves en </span>
+			<h4>el Mundo</h4>
+		  </a>
+		</div>      
+	  </div>
+	</div>
+  </div>
+  <div class="content-grid-item col-md-4 flex-column py-5">
+	<div class="icon-box icon-box-style-1">
+	  <div class="icon-box-icon">
+		<a href="#" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+		  <img src="./img/icons/home.png" alt="página Aviturismo en Colombia">
+		</a>
+	  </div>
+	  <div class="icon-box-info">
+		<div class="icon-box-info-title text-left">
+		  <a href="./mapas.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+			<span class="icon-box-sub-title">Aviturismo en </span>
+			<h4>Colombia</h4>
+		  </a>
+		</div>      
+	  </div>
+	</div>
+  </div>
+  <div class="content-grid-item col-md-4 flex-column py-5">
+	<div class="icon-box icon-box-style-1">
+	  <div class="icon-box-icon">
+		<a href="#" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+		  <img src="./img/icons/multimedia.png" alt="página Aviturismo en Colombia">
+		</a>
+	  </div>
+	  <div class="icon-box-info">
+		<div class="icon-box-info-title text-left">
+		  <a href="./recursos.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+			<span class="icon-box-sub-title">Aviturismo en </span>
+			<h4>Multimedia</h4>
+		  </a>
+		</div>      
+	  </div>
+	</div>
+  </div>
+  <div class="content-grid-item col-md-4 flex-column py-5">
+	<div class="icon-box icon-box-style-1">
+	  <div class="icon-box-icon">
+		<a href="#" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+		  <img src="./img/icons/regiones.png" alt="página Aviturismo en Colombia">
+		</a>
+	  </div>
+	  <div class="icon-box-info">
+		<div class="icon-box-info-title text-left">
+		  <a href="./aprende.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">
+			<span class="icon-box-sub-title">Aves en </span>
+			<h4>las Regiones</h4>
+		  </a>
+		</div>      
+	  </div>
+	</div>
+  </div>
+</section>	
+
+ <section>
+	<div class="heroImg2">
+	
+		<img  src="./img/assest/colibri-banner.png" alt="Logo"/>
+		
+	<div class="conteni22">	
+		
+		<a class="btn12" href="http://www.mincit.gov.co/mincit/media/Aviturismo/Guia-de-buenas-practicas.pdf" target="_new" onfocus="toggleFocus(this)" onblur="toggleFocus(this)"><span >Descargar</span></a>
+	</div>  
+	</div>
+		
+	  
+ 
+	
+ </section>
+<br><br>
+
+
+	<!--............................................ /.section .............................-->
+	
+		<article>
+			
+			<h2 class="font40"style="margin-top: 40px;">Conoce la diversidad de especies</h2>
+	
+			
+			
+			
+		</article>			 
+		<br>
+				
+		</section>
+	<div class="categories"> 
+		<button class="btn-todo"style="font-family:Poppins">Todas las especies</button>
+		<button class="btn-extincion" style="font-family:Poppins">Amenaza extinción</button>
+		<button class="btn-endemicas"style="font-family:Poppins">Endémicas</button>
+		<button class="btn-migratorias"style="font-family:Poppins">Migratorias</button>
+		</div>
+		
+		<section class="image-gallery"> 
+			<div class="image-card migratorias"> 
+			  <img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2024/05/Diopsittaca-nobilis-1.jpg">
+			  <h3 class="item-title">Guacamaya Noble</h3>    
+			</div>
+		 		  
+		  <div class="image-card endemicas"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2024/05/Saucerottia-tobaci.jpg">
+			<h3 class="item-title">Amazilia bronceada</h3>    
+		</div>
+		  
+		  <div class="image-card migratorias"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2024/05/Brachygalba-albogularis.jpg">
+			<h3 class="item-title">Jacamar gorgiblanco</h3>    
+		</div>
+		  
+		  <div class="image-card endemicas"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2024/05/Myrmia-micrura.jpg">
+			<h3 class="item-title">Colibrí colicorto</h3>    
+		</div>
+		  
+		  <div class="image-card extincion"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2024/05/Nesotriccus-incomtus.jpg">
+			<h3 class="item-title">Tiranuelo Norteño</h3>    
+		</div>
+		  
+		  <div class="image-card migratorias"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2024/05/Furnarius-cinnamomeus-1.jpg">
+			<h3 class="item-title">Hornero del Pacifico</h3>    
+		</div>
+		  
+		  <div class="image-card migratorias"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2024/04/Pyrrhura-rhodocephala-Ivan-Lau.png">
+			<h3 class="item-title">Periquito Coronirrojo</h3>    
+		</div>
+		  
+		  <div class="image-card migratorias"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2024/01/Myiophobus-cryptoxanthus.jpg">
+			<h3 class="item-title">Atrapamoscas  pechioliva</h3>    
+		</div>
+		  
+		  <div class="image-card migratorias"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/12/Chlorothraupis-frenata.png">
+		<h3 class="item-title">Guayabero Embridado</h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/12/Pachyramphus-salvini-1.png  ">
+		<h3 class="item-title"> Cabezón Críptico </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/12/Automolus-virgatus-1.jpeg ">
+		<h3 class="item-title"> Hojarasquero Listado </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/12/Grallaria-alticola-1.png  ">
+		<h3 class="item-title"> Tororoi de Boyacá </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/11/Formicivora-intermedia-.jpeg">
+		<h3 class="item-title">Hormiguerito Coicorita norteño  </h3>    
+		</div>
+		<div class="image-card extincion"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/09/podiceps_framed1.jpg ">
+		<h3 class="item-title">Zambullidor Andino  </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/09/Tororoi-bailador-harman-Bohmer.jpeg">
+		<h3 class="item-title">Tororoi bailador  </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/09/Myiophobus-roraimae-Andres-Vasquez-Novoa.png">
+		<h3 class="item-title"> Atrapamoscas de Roraima </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Hylophilus-olivaceus.png ">
+		<h3 class="item-title">  Hormiguero lunado</h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Dryobates-cassini-1.png">
+		<h3 class="item-title"> Carpintero cuello dorado </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Aulacorhynchus-caeruleogularis-1.jpg ">
+		<h3 class="item-title"> Tucancito gorjiazul </h3>    
+		</div>
+		<div class="image-card extincion"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Amazilis-amazilia2.jpg ">
+		<h3 class="item-title"> Amazilia de vientre castaño </h3>    
+		</div>
+		<div class="image-card extincion"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Lathrotriccus-griseipectus-1.jpg">
+		<h3 class="item-title">  Atrapamoscas Pechigris </h3>    
+		</div>
+		<div class="image-card extincion"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Nyctidromus-anthonyi-1.png">
+		<h3 class="item-title"> Chotacabras de Anthony </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Odontophorus-melanotis-1.png ">
+		<h3 class="item-title"> Perdiz Orejinegra </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Myiarchus-phaeocephalus.jpg ">
+		<h3 class="item-title"> Copeton Tiznado </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Melanopareia-elegans-1.jpg ">
+		<h3 class="item-title"> Pecholuna elegante </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Leucopternis-kuhli-1.png">
+		<h3 class="item-title"> Gavilán cejiblanco </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Thripophaga-fusciceps.jpg ">
+		<h3 class="item-title">Canastero liso  </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Myrtis-fanny-1.jpg  ">
+		<h3 class="item-title"> Colibrí hada elegante </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Phylloscartes-flavovirens.jpg  ">
+		<h3 class="item-title"> Tiranuelo verdiamarillo </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/08/Euphonia-violacea-1.png ">
+		<h3 class="item-title"> Eufonia Violacea </h3>    
+		</div>
+		
+		<div class="image-card endemicas"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/07/Zonotrichia-leucophrys-1.jpg  ">
+		<h3 class="item-title"> Gorrión corona blanca </h3>    
+		</div>
+		<div class="image-card extincion"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/07/Polioptila-guianensis-1.png ">
+		<h3 class="item-title"> Curruca Guyanesa </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/07/Cranioleuca-vulpecula.png">
+		<h3 class="item-title"> Chamicero de Parker </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/06/Urochroa-leucura.jpg ">
+		<h3 class="item-title"> Colibrí de Bouguer </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/06/Melospiza-lincolnii-1.jpg ">
+		<h3 class="item-title">Gorrión de Lincoln  </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/05/Forpus-crassirostris.jpeg ">
+		<h3 class="item-title">Periquito enano  </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/05/Grallaria-varia.jpg">
+		<h3 class="item-title"> Tororoi Pintado </h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/05/Harpagus-diodon.jpg">
+		<h3 class="item-title"> Gavilán Muslirufo </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/04/Fluvicola-albiventer-1.jpg">
+		<h3 class="item-title">  Viudita Blanca</h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/05/Odontophorus-dialeucos-.png">
+		<h3 class="item-title"> Perdiz Katía </h3>    
+		</div>
+		<div class="image-card endemicas"> 
+			<img class="no-event" src="https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/04/Zentrygon-goldmani.jpeg ">
+		<h3 class="item-title">  Paloma-perdiz Cabecicanela</h3>    
+		</div>
+		<div class="image-card migratorias"> 
+			<img class="no-event" src=" https://i0.wp.com/birdscolombia.com/wp-content/uploads/2023/04/Micrastur-plumbeus-Alex-Luna.png">
+		<h3 class="item-title">  Halcón-montés de Munchique</h3>    
+		</div>
+		
+		
+				
+		<div class="both"></div>
+		</section>
+		
+      
+<br>
+	
+	<section class="noticias">
+	
+	<div class="row text-center">
+		<article>
+			
+			<h2 class="font40"style="margin-top: 40px;">Materiales educativos regionales <br>¡Aprende y diviértete!</h2>
+							
+		</article>			
+		
+					
+		<div class="col-sm-6">
+            <div class="thumbnail" style="margin: 40px;">
+
+					
+
+				<img width="500" height="25" class="img-responsive" src="./img/assest/palomaurb.jpg" alt=""  
+				sizes="(max-width: 599px) 100vw, (max-width: 991px) 90vw, (min-width: 992px) 65vw, 1024px">
+				</div> <!-- .img-wrap -->
+
+				<div class="caption">
+					<h3 style="font-family: Poppins; font-size: 20px; color:#17B0E7"; > ¡Conoce las aves en donde vives!</h3>
+					<br><p style="font-family: Poppins;font-size:20 px;color: #555";>Aprende sobre las especies regionales</p><br>
+					<p><a class="btn btn-md btn-primary" href="/es/aprende/" role="button">Las aves »</a></p>
+				</div> <!-- .caption -->
+
+			</div> <!-- .thumbnail -->
+
+			<div class="col-sm-6">
+				<div class="thumbnail" style="margin: 40px;">
+	
+						
+	
+					<img width="500" height="250" class="img-responsive" src="./img/assest/mapaavescolombia.jpg" 
+					sizes="(max-width: 599px) 100vw, (max-width: 991px) 90vw, (min-width: 992px) 65vw, 1024px">
+	
+					</div> <!-- .img-wrap -->
+	
+					<div class="caption">
+						<h3 style="font-family: Poppins; font-size: 20px; color:#17B0E7"; >¡Explora los mapas!</h3>
+						<br><p  style="font-family: Poppins;font-size:20 px;color: #555"; >Mapa de los sitios y mapas interactivos.</p><br>
+						<p><a class="btn btn-md btn-primary" href="/es/explora/" role="button">Los mapas »</a></p>
+					</div> <!-- .caption -->
+	
+			</div> <!-- .thumbnail -->
+
+			<div class="col-sm-6">
+				<div class="thumbnail" style="margin: 40px;">
+	
+						
+	
+					<img width="500" height="250" class="img-responsive" src="./img/assest/amoraves.jpg" 
+					sizes="(max-width: 599px) 100vw, (max-width: 991px) 90vw, (min-width: 992px) 65vw, 1024px">
+	
+					</div> <!-- .img-wrap -->
+	
+					<div class="caption">
+						<h3 style="font-family: Poppins; font-size: 20px; color:#17B0E7";  >¡Mira nuestros recursos!</h3>
+						<br><p  style="font-family: Poppins;font-size:20 px;color: #555"; >Descubre materiales educativos, eventos y más.</p><br>
+						<p><a class="btn btn-md btn-primary" href="/es/explora/" role="button">Los recursos »</a></p>
+					</div> <!-- .caption -->
+	
+				</div> <!-- .thumbnail -->
+			
+		</div> <!-- .col-sm-4 -->
+		<br> <br> <br> 	<br>
+		<div class="descarga">
+			<div class="descargapdf">
+			<h6><a class="ng-binding" target="_blank" href="./img/assest/mapa aves y territorios protegidos cundinamarca y boyaca.pdf.pdf">Descarga los mapas</a></h6>
+		</div>
+	</div>
+	<br><br><br>
+
+<div class="video"  style="text-align: center;" >
+	<h3 style="font-family: Poppins; font-size: 20px; color:#17B0E7";  >¡Migración de aves en el continente!</h3>
+	<br><p  style="font-family: Poppins;font-size:20 px;color: #555"; >Los científicos consolidaron estos datos para crear visualizaciones animadas e interactivas <br>que, sobre un mapa, dan vida a la migración de las especies. </p><br>
+	<br><br>
+	<video width="640" height="360" controls >
+		<source src="./img/assest/video/bme_map_-_whimbrel_-_sea_level_rise_0.mp4" type="video/mp4" autoplay>
+		
+	  </video>
+</div>
+
+<br><br><br>
+<section class="contact" style="display: flex; align-items: flex-end;background-color: #ccc;">
+    <div class="imgpaloma" style="margin: 15px;">
+        <img src="./img/assest/newsletter-pigeon.png" alt="newsletter sign-up">
+    </div>
+    <div class="item2" style="display: flex; flex-direction: column; width: 75%; margin: 15px;">
+        <h2 style="font-size: 30px; font-family: poppins; color: #17B0E7;">Envía una paloma</h2><br> 
+        <p style="font-family: poppins; color: #555;">¡Suscríbete y mantente al día con las últimas noticias y eventos!</p><br>
+        <form method="post" action="/es/" class="w-100">
+            <fieldset>
+                <label for="email" style="font-family: poppins; color: #17B0E7;">Tu correo electrónico</label>
+                <input style="font-family: poppins; color: #fff;"type="text" name="email" id="email" class="form-control" style="width: 4550px;"placeholder="Por favor, ingrese un correo electrónico válido">
+                <br><br>
+				<label style="color: #555; align-self: flex-end; font-family: poppins; ">
+                    <input type="checkbox" name="email_list[]" checked> Boletín de Noticias en línea </label>&nbsp &nbsp &nbsp
+                <label style="color: #555; align-self: flex-end;font-family: poppins; " class="signup-cubs">
+                    <input type="checkbox" name="email_list[]" checked> Colombia disfruta de las aves
+                </label>
+				
+				<div style="padding: 0px 10px 20px">
+					<button type="submit" id="mail-submit" class="btn btn-primary" style="margin-top: 100px;align-self: flex-end;">Suscríbete</button>
+                
+				</div>
+				
+                <input type="hidden" name="mail-language" id="mail-language" value="es">
+            </fieldset>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Inicia pie de página -->
+
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+
+
+<div id="links">
+
+<div class="container">
+	<div class="row">
+
+		
+		
+
+		<div class="clearfix visible-xs-block"></div>
+
+		<nav class="col-sm-3 col-xs-6 social">
+			<h6><span style="font-family: poppins; font-size: 20px;">Mantente en contacto<br> con nosotros</span></h6><br><br><br><br>
+				<a href="#"style="font-family: poppins; font-size: 15px";>eNewsletter</a> <br><br>
+				<a href="#"style="font-family: poppins; font-size: 15px";>Blog</a> <br><br>
+				<a href="https://www.facebook.com/"style="font-family: poppins; font-size: 15px">Facebook</a><br><br>
+				<a href="https://twitter.com/"style="font-family: poppins; font-size: 15px">Twitter</a> <br><br>
+				<a href="https://www.flickr.com/groups/birds_birds_birds/"style="font-family: poppins; font-size: 15px";>Flickr</a><br><br>
+				<a href="/contacto.html"style="font-family: poppins; font-size: 15px">Contáctanos aquí</a>
+		</nav>
+
+		<nav class="col-sm-3 col-xs-6">
+			<h6><span style="font-family: poppins; color: 107BA1;font-size: 20px;";>Apoyo <br>y Donaciones</span></h6><br><br><br><br>
+			<a href="#" style="font-family: poppins; color: 107BA1;font-size: 15px";>Apoya a Colombia País de las Aves</a><br><br><br>
+			
+			<a href="#" style="font-family: poppins; color: 107BA1;font-size: 15px">Otras formas de apoyar</a><br><br><br>
+			<a href="#" style="font-family: poppins; color: 107BA1;font-size: 15px">Dona y apoya nuestra causa</a>
+		</nav>
+
+	</div> <!-- .row -->
+</div> <!-- .container -->
+
+</div> <!-- #links -->
+
+
+<div id="cornell-info">
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-sm-6">
+
+			<img style= width:34 height="28" src="./img/assest/ColombiaWbg.png" alt="Logo"/>
+			<img style= width:24 height="33" src="./img/assest/Disfruta-de-las-Aves.png" alt="Logo"/>
+
+				
+			
+		
+
+		</div>
+
+		<div class="col-sm-6">
+
+			<address style="font-family: poppins; font-size: 15px";>
+				Departamentos de 
+				Cundinamarca y Boyacá<br />
+			
+				
+				Proyecto Biodiversidad<br />
+				Región Ornitológica <br />
+			</address>
+
+		</div>
+
+		<div class="col-sm-6">
+
+			<small class="copyright" style="font-family: poppins; font-size: 15px";> Universidad Sergio Arboleda<br> Bootcamp <br/> &copy; 2024 <br/></small>
+
+		</div>
+
+	</div> <!-- .row-->
+</div> <!-- .container -->
+
+</div> 
+
+</footer><!-- #colophon -->
+
+
+<script type="text/javascript" src="" id="jquery-flexslider-js"></script>
+<script type="text/javascript" src="" id="jquery-flexslider-load-js"></script>
+<script type="text/javascript" src="https://celebrateurbanbirds.org/wp-content/themes/curb/js/animation.js?ver=20160205" id="curb-animation-js"></script> 
+<script>
+	const menu = document.querySelector('.labofo_sso_wrap');
+
+	window.addEventListener('scroll', () => {
+		if (window.scrollY > 0) {
+			menu.classList.add('con-transparencia');
+		} else {
+			menu.classList.remove('con-transparencia');
+		}
+	});
+</script> 
+
+
+</body>
+
+
+
+</html>
