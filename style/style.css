@@ -5815,7 +5815,7 @@ a.post-edit-link {
 }
 
 #mainNavbar a.learn {
-  background: url("/icons/bird.png") top center no-repeat;
+  background: url(icons/bird.png) top center no-repeat;
   background-position: 25% 25%;
   background-size: 48% auto
 }
